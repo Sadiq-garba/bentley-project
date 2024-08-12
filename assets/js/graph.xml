@@ -1,0 +1,118 @@
+Here is the solution in XML format representing the sorting network for the given values:
+
+```xml
+<SortingNetwork>
+    <Layer number="1">
+        <Comparator>
+            <Input>8</Input>
+            <Input>3</Input>
+            <Output>3</Output>
+            <Output>8</Output>
+        </Comparator>
+        <Comparator>
+            <Input>1</Input>
+            <Input>7</Input>
+            <Output>1</Output>
+            <Output>7</Output>
+        </Comparator>
+        <Comparator>
+            <Input>2</Input>
+            <Input>5</Input>
+            <Output>2</Output>
+            <Output>5</Output>
+        </Comparator>
+        <Comparator>
+            <Input>4</Input>
+            <Input>6</Input>
+            <Output>4</Output>
+            <Output>6</Output>
+        </Comparator>
+    </Layer>
+    <Layer number="2">
+        <Comparator>
+            <Input>3</Input>
+            <Input>1</Input>
+            <Output>1</Output>
+            <Output>3</Output>
+        </Comparator>
+        <Comparator>
+            <Input>8</Input>
+            <Input>7</Input>
+            <Output>7</Output>
+            <Output>8</Output>
+        </Comparator>
+        <Comparator>
+            <Input>2</Input>
+            <Input>4</Input>
+            <Output>2</Output>
+            <Output>4</Output>
+        </Comparator>
+        <Comparator>
+            <Input>5</Input>
+            <Input>6</Input>
+            <Output>5</Output>
+            <Output>6</Output>
+        </Comparator>
+    </Layer>
+    <Layer number="3">
+        <Comparator>
+            <Input>1</Input>
+            <Input>2</Input>
+            <Output>1</Output>
+            <Output>2</Output>
+        </Comparator>
+        <Comparator>
+            <Input>3</Input>
+            <Input>4</Input>
+            <Output>3</Output>
+            <Output>4</Output>
+        </Comparator>
+        <Comparator>
+            <Input>7</Input>
+            <Input>5</Input>
+            <Output>5</Output>
+            <Output>7</Output>
+        </Comparator>
+        <Comparator>
+            <Input>8</Input>
+            <Input>6</Input>
+            <Output>6</Output>
+            <Output>8</Output>
+        </Comparator>
+    </Layer>
+    <Layer number="4">
+        <Comparator>
+            <Input>2</Input>
+            <Input>3</Input>
+            <Output>2</Output>
+            <Output>3</Output>
+        </Comparator>
+        <Comparator>
+            <Input>4</Input>
+            <Input>5</Input>
+            <Output>4</Output>
+            <Output>5</Output>
+        </Comparator>
+    </Layer>
+    <Layer number="5">
+        <Comparator>
+            <Input>3</Input>
+            <Input>4</Input>
+            <Output>3</Output>
+            <Output>4</Output>
+        </Comparator>
+    </Layer>
+    <FinalOutput>
+        <Value>1</Value>
+        <Value>2</Value>
+        <Value>3</Value>
+        <Value>4</Value>
+        <Value>5</Value>
+        <Value>6</Value>
+        <Value>7</Value>
+        <Value>8</Value>
+    </FinalOutput>
+</SortingNetwork>
+```
+
+This XML structure breaks down the sorting process into layers and comparators, showing the input and output values at each step.
