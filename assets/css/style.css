@@ -678,6 +678,7 @@ a:hover {
   height: 100vh;
   position: relative;
   color: #fff;
+  overflow: hidden; /* Add this line */
 }
 .hero .hero-content {
   text-align: center;
@@ -747,31 +748,36 @@ a:hover {
 }
 /* ---------------------------------------VID---------------------------- */
 
-.vid{
-  position:absolute;
-  right:0;
-  bottom:0;
+.vid {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
   z-index: -1;
-  width:100%;
-
+  object-fit: cover;
 }
-
-@media (min-aspect-ratio:16/9){
-
-  .vid{
-     width:100%;
-  
+@media (min-aspect-ratio: 16/9) {
+  .vid {
+    width: 100%;
+    height: auto;
   }
 }
-@media (max-aspect-ratio:16/9){
-
-  .vid{
-     width:auto;
-     height:100%;
+@media (max-aspect-ratio: 16/9) {
+  .vid {
+    width: auto;
+    height: 100%;
   }
 }
-
-
+@media (max-width: 768px) {
+  .vid {
+    display: block !important;
+    width: auto;
+    height: 100%;
+  }
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
